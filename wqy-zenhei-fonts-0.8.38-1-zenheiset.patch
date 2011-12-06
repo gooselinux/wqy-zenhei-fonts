@@ -1,0 +1,21 @@
+commit 75abca74850183d4e2036beedd27361819251bd8
+Author: Peng Wu <epico@dhcp-65-116.nay.redhat.com>
+Date:   Mon Mar 1 12:58:12 2010 +0800
+
+    add root user check for zenheiset.
+
+diff --git a/zenheiset b/zenheiset
+index f1a986a..eb12df3 100755
+--- a/zenheiset
++++ b/zenheiset
+@@ -12,6 +12,10 @@ BMPCONF=66-wqy-zenhei-sharp.conf
+ BMPSTDCONF=66-wqy-zenhei-sharp-no13px.conf
+ AACONF=44-wqy-zenhei.conf
+ 
++if [ $UID -ne 0 ]; then
++    echo 1>&2 Please run $0 as root user.
++    exit 2
++fi
+ 
+ if [ $# -ne 1 ]; then
+      echo 1>&2 Usage: $0 \[aa\|bitmap\|bitmapfull\]

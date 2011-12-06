@@ -1,0 +1,33 @@
+diff --git a/44-wqy-zenhei.conf b/44-wqy-zenhei.conf
+index 5744827..4344c30 100644
+--- a/44-wqy-zenhei.conf
++++ b/44-wqy-zenhei.conf
+@@ -19,28 +19,4 @@
+         <edit name="rgba" mode="assign"><const>none</const></edit>
+         <edit name="embeddedbitmap"><bool>false</bool></edit>
+   </match>
+-        <alias>
+-                <family>serif</family>
+-                <prefer>
+-                        <family>Bitstream Vera Serif</family>
+-                        <family>DejaVu Serif</family>
+-                        <family>WenQuanYi Zen Hei</family>
+-                </prefer>
+-        </alias>
+-        <alias>
+-                <family>sans-serif</family>
+-                <prefer>
+-                        <family>DejaVu Sans</family>
+-                        <family>Bitstream Vera Sans</family>
+-                        <family>WenQuanYi Zen Hei</family>
+-                </prefer>
+-        </alias>
+-        <alias>
+-                <family>monospace</family>
+-                <prefer>
+-                        <family>DejaVu Sans Mono</family>
+-                        <family>Bitstream Vera Sans Mono</family>
+-                        <family>WenQuanYi Zen Hei Mono</family>
+-                </prefer>
+-        </alias>
+ </fontconfig>

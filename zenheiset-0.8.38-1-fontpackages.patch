@@ -1,0 +1,13 @@
+diff --git a/zenheiset b/zenheiset
+index a75c4c0..782f691 100755
+--- a/zenheiset
++++ b/zenheiset
+@@ -6,7 +6,7 @@
+ # Qianqian Fang <fangq at nmr.mgh.harvard.edu>
+ ###############################################
+ 
+-FAVAIL=/etc/fonts/conf.avail
++FAVAIL=/usr/share/fontconfig/conf.avail
+ FCONF=/etc/fonts/conf.d
+ BMPCONF=43-wqy-zenhei-sharp.conf
+ BMPSTDCONF=66-wqy-zenhei-sharp-no13px.conf
